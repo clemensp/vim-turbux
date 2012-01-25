@@ -100,8 +100,8 @@ nnoremap <silent> <Plug>SendTestToTmux :<C-U>w \| call SendTestToTmux(expand('%'
 nnoremap <silent> <Plug>SendFocusedTestToTmux :<C-U>w \| call SendFocusedTestToTmux(expand('%'), line('.'))<CR>
 
 if !exists("g:no_turbux_mappings")
-  nmap <leader>t <Plug>SendTestToTmux
-  nmap <leader>T <Plug>SendFocusedTestToTmux
+  nmap <leader>rT <Plug>SendTestToTmux
+  nmap <leader>rt <Plug>SendFocusedTestToTmux
 endif
 
 " vim:set ft=vim ff=unix ts=4 sw=2 sts=2:
